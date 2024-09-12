@@ -1,0 +1,64 @@
+/* src/assets/css/app.css */
+
+/* Ensure html and body take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Or your preferred font */
+}
+
+/* Flexbox setup for layout */
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+header, footer {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0; /* Adjust padding as needed */
+}
+
+header {
+  background-color: #333; /* Dark background color */
+  color: white;
+  position: fixed; /* Fixes the header to the top */
+  top: 0; /* Ensures it stays at the top */
+  left: 0; /* Ensures it stretches to the left edge */
+  z-index: 1000; /* Makes sure it stays above other content */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+  main {
+    padding: 60px 20px; /* Adjust top padding to avoid overlap with fixed header */
+    margin: 0;
+    flex: 1; /* Allows this section to grow and fill the space */
+  }
+
+
+  footer {
+    background-color: #333; /* Dark background color */
+    color: white;
+    position: fixed; /* Fixes the footer to the bottom */
+    bottom: 0; /* Ensures it stays at the bottom */
+    left: 0; /* Ensures it stretches to the left edge */
+    text-align: center;
+    z-index: 1000; /* Makes sure it stays above other content */
+  }
